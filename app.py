@@ -473,6 +473,8 @@ matplotlib.use('Agg')
 
 # Initialize the Dash app
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
+
 
 # Global variable to keep track of progress and results
 progress = {
